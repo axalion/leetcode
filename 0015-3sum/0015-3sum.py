@@ -5,6 +5,8 @@ class Solution:
         res = []
 
         for i, val in enumerate(nums):
+            if val > 0:
+                break
             if i > 0 and nums[i] == nums[i-1]:
                 continue
             
